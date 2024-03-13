@@ -56,7 +56,7 @@ function Detection() {
               <span className='drop-title'>Upload here</span>
               or
               <input type="file" id='image' accept='image/*' onChange={(e) => setImg(e.target.files[0])} />
-              <button style={{ marginTop: "20px", fontSize: "18px", width: "max-content" }} onClick={() => onChecked()} className='btn btn-outline-dark'>Check</button>
+              <button style={{ marginTop: "20px", fontSize: "18px", width: "max-content" }} disabled={!img} onClick={() => onChecked()} className='btn btn-outline-dark'>Check</button>
             </label>
           </div>
         </div>
